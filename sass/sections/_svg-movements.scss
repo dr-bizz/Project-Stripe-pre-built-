@@ -1,0 +1,27 @@
+.tool-kit--content {
+    svg {
+        g {
+            circle {
+                @include prefix(animation, moving-buttons 3s 2s infinite);
+            }
+            &:first-of-type {
+                circle {
+                    @include prefix(animation, moving-buttons 3s infinite);
+                }
+            }
+        }
+    }
+}
+
+
+@include keyframes(moving-buttons) {
+    0% {
+        @include prefix(transform, translateX(0px));
+    }
+    50% {
+        @include prefix(transform, translateX(14px));
+    }
+    100% {
+        @include prefix(transform, translateX(0px));
+    }
+}

@@ -1,0 +1,41 @@
+.btn {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: $color__secondary;
+    text-decoration: none;
+    @include prefix(transition, all .15s ease);
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include prefix(transform, translateY(-1px));
+        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    }
+
+    &.green-btn {
+        color: #fff;
+        background: $color__tertiary;
+        text-shadow: 0 1px 3px rgba(36,180,126,.4);
+    }
+
+    &.purple-btn {
+        color: #fff;
+        background: $color__secondary;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: #7795f8;
+        }
+    }
+}

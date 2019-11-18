@@ -1,0 +1,46 @@
+.footer-cta {
+    padding: 80px 0;
+    background: $color__grey;
+
+    .container {
+        @include clearfix();
+    }
+    &--content,
+    &--button {
+        float: left;
+        width: 50%;
+
+        @media (max-width: 670px) {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 400;
+
+        span {
+            color: $color__secondary;
+            font-size: 26px;
+            font-weight: 300;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &--button {
+        text-align: right;
+        margin-top: 30px;
+
+        @media (max-width: 670px) {
+            margin: 0;
+            text-align: left;
+        }
+
+        a {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+}

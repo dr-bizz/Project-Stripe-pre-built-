@@ -1,0 +1,53 @@
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    padding: 20px 0;
+
+    img {
+        max-width: 60px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.common-body-header {
+    color: $color__tertiary;
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 600;
+	text-transform: uppercase;
+    letter-spacing: .025em;
+    
+    span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    svg {
+        max-width: 66px;
+        max-height: 66px;
+    }
+}
+
+.common-link {
+    color: $color__secondary;
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 2px solid #f1f7fb;
+    display: block;
+    font-weight: 400;
+}
+
+.common-body-text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+}
